@@ -55,7 +55,7 @@ body {
 
     padding: 0 8%;
 
-    background-image: url("images/dish21.jpg");
+    background-image: url("images/dish21.JPG");
     background-size: cover;
     background-position: center;
 
@@ -422,7 +422,7 @@ body {
     text-align: center;
     color: white;
 
-    background-image: url("images/dish25.jpg");
+    background-image: url("images/dish25.JPG");
     background-size: cover;
     background-position: center;
 }
@@ -668,32 +668,32 @@ body {
 
 
 .indian {
-    background-image: url("images/dish13.jpg");
+    background-image: url("images/dish13.JPG");
 }
 
 
 .contemporary {
-    background-image: url("images/dish7.jpg");
+    background-image: url("images/dish7.JPG");
 }
 
 
 .seafood {
-    background-image: url("images/dish4.jpg");
+    background-image: url("images/dish4.JPG");
 }
 
 
 .grill {
-    background-image: url("images/dish18.jpg");
+    background-image: url("images/dish18.JPG");
 }
 
 
 .fine-dining {
-    background-image: url("images/dish17.jpg");
+    background-image: url("images/dish17.JPG");
 }
 
 
 .desserts {
-    background-image: url("images/dish21.jpg");
+    background-image: url("images/dish21.JPG");
 }
 
 
@@ -761,7 +761,7 @@ body {
     text-align: center;
     color: white;
 
-    background-image: url("images/dish25.jpg");
+    background-image: url("images/dish25.JPG");
     background-size: cover;
     background-position: center;
 }
@@ -1018,11 +1018,11 @@ body {
 }
 
 .gallery-hero {
-    background-image: url("images/dish26.jpg");
+    background-image: url("images/dish26.JPG");
 }
 
 .contact-page-hero {
-    background-image: url("images/dish25.jpg");
+    background-image: url("images/dish25.JPG");
 }
 /* =========================
    BACKGROUND IMAGE OVERLAYS
@@ -1240,7 +1240,7 @@ body {
 .home-hero {
     position: relative;
 
-    background-image: url("images/dish20.jpg");
+    background-image: url("images/dish20.JPG");
     background-size: cover;
     background-position: center;
 
