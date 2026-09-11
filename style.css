@@ -1,0 +1,1587 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 8%;
+
+    background-color: #111;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    color: var(--chef-gold);
+}
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+.hero {
+    position: relative;
+
+    min-height: 90vh;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 8%;
+
+    background-image: url("images/dish21.jpg");
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+
+    overflow: hidden;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.hero-small-text {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 64px;
+    margin-bottom: 10px;
+}
+
+.hero h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+
+    margin-top: 30px;
+}
+
+.btn {
+    display: inline-block;
+
+    padding: 14px 25px;
+
+    background-color: white;
+    color: black;
+
+    text-decoration: none;
+
+    border: 1px solid white;
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: white;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+.about-section {
+    display: flex;
+    align-items: center;
+
+    gap: 60px;
+
+    padding: 100px 8%;
+}
+
+.about-image,
+.about-text {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    max-height: 600px;
+
+    object-fit: cover;
+}
+
+.section-label {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+
+    margin-bottom: 15px;
+}
+
+.about-text h2 {
+    font-size: 42px;
+
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    line-height: 1.8;
+
+    margin-bottom: 30px;
+}
+
+.dark-btn {
+    display: inline-block;
+
+    padding: 14px 25px;
+
+    background-color: #111;
+    color: white;
+
+    text-decoration: none;
+}
+.dishes-section {
+    padding: 100px 8%;
+
+    background-color: #f5f5f5;
+}
+
+.section-heading {
+    text-align: center;
+
+    margin-bottom: 50px;
+}
+
+.section-heading h2 {
+    font-size: 42px;
+}
+
+.dish-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+.dish-card {
+    background-color: white;
+
+    padding-bottom: 25px;
+}
+
+.dish-card img {
+    width: 100%;
+    height: 300px;
+
+    object-fit: cover;
+}
+
+.dish-card h3 {
+    margin: 20px 20px 10px;
+}
+
+.dish-card p {
+    margin: 0 20px;
+
+    line-height: 1.6;
+}
+.quote-section {
+    padding: 120px 20%;
+
+    text-align: center;
+
+    background-color: #111;
+    color: white;
+}
+
+.quote-section blockquote {
+    font-size: 34px;
+    line-height: 1.5;
+
+    margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 44px;
+    }
+
+    .about-section {
+        flex-direction: column;
+    }
+
+    .dish-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* ==================================================
+   About PAGE
+================================================== */
+.page-hero {
+    position: relative;
+
+    padding: 100px 8%;
+    text-align: center;
+
+    background-color: #222;
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+
+    overflow: hidden;
+}
+
+.page-hero h1 {
+    font-size: 52px;
+    margin-bottom: 20px;
+}
+
+.page-hero p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+.about-page-section {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding: 100px 8%;
+}
+
+.about-page-image,
+.about-page-text {
+    flex: 1;
+}
+
+.about-page-image img {
+    width: 100%;
+    max-height: 650px;
+    object-fit: cover;
+}
+
+.about-page-text h2 {
+    font-size: 46px;
+    margin-bottom: 25px;
+}
+
+.about-page-text p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+
+.chef-values {
+    padding: 100px 8%;
+    background-color: #f5f5f5;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.value-card {
+    background-color: white;
+    padding: 40px;
+}
+
+.value-card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.value-card p {
+    line-height: 1.7;
+}
+
+
+@media (max-width: 768px) {
+
+    .about-page-section {
+        flex-direction: column;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .page-hero h1 {
+        font-size: 38px;
+    }
+
+}
+/* ==================================================
+   Gallery PAGE
+================================================== */
+.gallery-section {
+    padding: 100px 8%;
+
+    background-color: #2f2e2e;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.gallery-item {
+    overflow: hidden;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 900px) {
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* ==================================================
+   SPECIALITIES PAGE
+================================================== */
+
+
+/* GOLD COLOUR USED THROUGHOUT PAGE */
+
+:root {
+    --chef-gold: #d6ad60;
+}
+
+
+/* ---------------- HERO ---------------- */
+
+.specialities-hero {
+    position: relative;
+
+    min-height: 330px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: white;
+
+    background-image: url("images/dish25.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* Dark layer over hero photograph */
+
+.specialities-hero-overlay {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.68);
+}
+
+
+.specialities-hero-content {
+    position: relative;
+    z-index: 2;
+
+    max-width: 850px;
+
+    padding: 70px 30px;
+}
+
+
+.gold-label {
+    color: var(--chef-gold);
+
+    font-size: 14px;
+    font-weight: bold;
+
+    letter-spacing: 5px;
+
+    margin-bottom: 20px;
+}
+
+
+.gold-line {
+    width: 40px;
+    height: 2px;
+
+    margin: 0 auto 20px;
+
+    background-color: var(--chef-gold);
+}
+
+
+.specialities-hero h1 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 60px;
+    font-weight: normal;
+
+    margin-bottom: 15px;
+}
+
+
+.specialities-intro {
+    font-size: 18px;
+    line-height: 1.7;
+
+    max-width: 700px;
+
+    margin: auto;
+}
+
+
+/* ---------------- GRID ---------------- */
+
+.specialities-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    background-color: #111;
+}
+
+
+/* Individual speciality */
+
+.speciality-box {
+    position: relative;
+
+    min-height: 370px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    color: white;
+
+    background-size: cover;
+    background-position: center;
+
+    overflow: hidden;
+
+    border-right: 1px solid rgba(255,255,255,0.25);
+    border-bottom: 1px solid rgba(255,255,255,0.25);
+}
+
+
+/* THE FADED EFFECT YOU ASKED FOR */
+
+.speciality-overlay {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.62);
+
+    transition: background 0.4s ease;
+}
+
+
+/* Make image slightly brighter when hovering */
+
+.speciality-box:hover .speciality-overlay {
+    background: rgba(0, 0, 0, 0.48);
+}
+
+
+/* Content sits ABOVE dark overlay */
+
+.speciality-content {
+    position: relative;
+    z-index: 2;
+
+    max-width: 390px;
+
+    padding: 45px 35px;
+}
+
+
+.speciality-icon {
+    display: block;
+
+    color: var(--chef-gold);
+
+    font-size: 34px;
+
+    margin-bottom: 15px;
+}
+
+
+.speciality-content h2 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 30px;
+    font-weight: normal;
+
+    margin-bottom: 14px;
+}
+
+
+.small-gold-line {
+    width: 35px;
+    height: 2px;
+
+    margin: 0 auto 18px;
+
+    background-color: var(--chef-gold);
+}
+
+
+.speciality-content p {
+    font-size: 16px;
+    line-height: 1.7;
+
+    margin-bottom: 25px;
+}
+
+
+.speciality-content a {
+    color: var(--chef-gold);
+
+    font-size: 13px;
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    text-decoration: none;
+}
+
+
+.speciality-content a:hover {
+    color: white;
+}
+
+/* VIEW MORE BUTTON */
+
+.gallery-more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 55px 0 20px;
+}
+
+#viewMoreBtn {
+    min-width: 220px;
+
+    padding: 18px 42px;
+
+    background-color: transparent;
+
+    color: var(--chef-gold);
+
+    border: 1px solid var(--chef-gold);
+
+    font-size: 13px;
+    font-weight: bold;
+
+    letter-spacing: 4px;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+#viewMoreBtn:hover {
+    background-color: var(--chef-gold);
+
+    color: #111;
+
+    transform: translateY(-3px);
+}
+/* ---------------- BACKGROUND IMAGES ---------------- */
+
+
+/* Change these dish numbers to whichever
+   photographs you think suit each category best */
+
+
+.indian {
+    background-image: url("images/dish13.jpg");
+}
+
+
+.contemporary {
+    background-image: url("images/dish7.jpg");
+}
+
+
+.seafood {
+    background-image: url("images/dish4.jpg");
+}
+
+
+.grill {
+    background-image: url("images/dish18.jpg");
+}
+
+
+.fine-dining {
+    background-image: url("images/dish17.jpg");
+}
+
+
+.desserts {
+    background-image: url("images/dish21.jpg");
+}
+
+
+/* ---------------- ACTIVE NAVIGATION ---------------- */
+
+.nav-links .active {
+    color: var(--chef-gold);
+
+    border-bottom: 2px solid var(--chef-gold);
+
+    padding-bottom: 8px;
+}
+
+
+/* ---------------- TABLET ---------------- */
+
+@media (max-width: 900px) {
+
+    .specialities-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .specialities-hero h1 {
+        font-size: 48px;
+    }
+
+}
+
+
+/* ---------------- MOBILE ---------------- */
+
+@media (max-width: 600px) {
+
+    .specialities-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .specialities-hero {
+        min-height: 400px;
+    }
+
+    .specialities-hero h1 {
+        font-size: 40px;
+    }
+
+    .speciality-box {
+        min-height: 400px;
+    }
+
+}
+/* ==================================================
+   CONTACT PAGE
+================================================== */
+
+
+.contact-hero {
+    position: relative;
+
+    min-height: 360px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: white;
+
+    background-image: url("images/dish25.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+.contact-hero-overlay {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.62);
+}
+
+
+.contact-hero-content {
+    position: relative;
+    z-index: 2;
+
+    max-width: 800px;
+    padding: 70px 30px;
+}
+
+
+.contact-hero-content h1 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 55px;
+    font-weight: normal;
+
+    margin-bottom: 20px;
+}
+
+
+.contact-hero-content > p:last-child {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+
+/* CONTACT MAIN AREA */
+
+.contact-section {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 100px;
+
+    padding: 110px 8%;
+
+    background-color: #111;
+    color: white;
+}
+
+
+.contact-info h2 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 46px;
+    font-weight: normal;
+
+    line-height: 1.2;
+
+    margin-bottom: 25px;
+}
+
+
+.contact-description {
+    max-width: 500px;
+
+    line-height: 1.8;
+
+    color: #ccc;
+
+    margin-bottom: 50px;
+}
+
+
+.contact-detail {
+    padding: 22px 0;
+
+    border-top: 1px solid #333;
+}
+
+
+.contact-detail span {
+    display: block;
+
+    color: var(--chef-gold);
+
+    font-size: 12px;
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 10px;
+}
+
+
+.contact-detail p,
+.contact-detail a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 16px;
+}
+
+
+.contact-detail a:hover {
+    color: var(--chef-gold);
+}
+
+
+/* FORM */
+
+.contact-form-container {
+    background-color: #181818;
+
+    padding: 50px;
+}
+
+
+.form-row {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 25px;
+}
+
+
+.form-group {
+    display: flex;
+
+    flex-direction: column;
+
+    margin-bottom: 30px;
+}
+
+
+.form-group label {
+    color: var(--chef-gold);
+
+    font-size: 11px;
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 12px;
+}
+
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+
+    padding: 15px 0;
+
+    color: white;
+
+    background: transparent;
+
+    border: none;
+
+    border-bottom: 1px solid #555;
+
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+
+    outline: none;
+}
+
+
+.form-group textarea {
+    resize: vertical;
+}
+
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-bottom-color: var(--chef-gold);
+}
+
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #777;
+}
+
+
+.contact-button {
+    padding: 16px 30px;
+
+    background-color: var(--chef-gold);
+
+    color: #111;
+
+    border: none;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.contact-button:hover {
+    background-color: white;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    .contact-section {
+        grid-template-columns: 1fr;
+
+        gap: 60px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form-container {
+        padding: 30px;
+    }
+
+    .contact-hero-content h1 {
+        font-size: 40px;
+    }
+
+    .contact-info h2 {
+        font-size: 38px;
+    }
+
+}
+/* =========================================
+   PAGE HERO BACKGROUND IMAGES
+========================================= */
+.about-hero {
+    background-image: url("images/spices.jpg");
+}
+
+.gallery-hero {
+    background-image: url("images/dish26.jpg");
+}
+
+.contact-page-hero {
+    background-image: url("images/dish25.jpg");
+}
+/* =========================
+   BACKGROUND IMAGE OVERLAYS
+========================= */
+
+.hero,
+.about-hero,
+.gallery-hero {
+    position: relative;
+}
+
+.hero::before,
+.about-hero::before,
+.gallery-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.50);
+}
+
+.hero > *,
+.about-hero > *,
+.gallery-hero > * {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.site-footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 45px 8% 25px;
+    border-top: 1px solid #333;
+}
+
+.site-footer h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 27px;
+    font-weight: normal;
+    margin-bottom: 8px;
+}
+
+.footer-title {
+    color: #aaa;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.footer-title span {
+    color: var(--chef-gold);
+    margin: 0 7px;
+}
+
+.footer-gold-line {
+    width: 45px;
+    height: 2px;
+    background-color: var(--chef-gold);
+    margin: 22px auto;
+}
+
+.copyright {
+    color: #777;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+/* =====================================
+   ABOUT PAGE - SUBTLE SPICE FULL PAGE
+===================================== */
+
+/* =====================================
+   ABOUT PAGE - FULL SPICE BACKGROUND
+===================================== */
+
+.about-page-bg {
+    background-image: url("images/spices.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* CHEF BIOGRAPHY AREA */
+
+.about-page-bg .about-page-section {
+    background: rgba(248, 244, 236, 0.88);
+}
+
+.about-page-bg .about-page-text h2 {
+    color: #111;
+}
+
+.about-page-bg .about-page-text p {
+    color: #444;
+}
+
+
+/* HIS APPROACH AREA */
+
+.about-page-bg .chef-values {
+    position: relative;
+    background: rgba(248, 244, 236, 0.40);
+}
+
+.about-page-bg .chef-values::before {
+    display: none;
+}
+
+.about-page-bg .chef-values > * {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* HIS APPROACH HEADING */
+
+.about-page-bg .section-heading {
+    text-align: center;
+}
+
+.about-page-bg .section-heading h2 {
+    color: #111;
+}
+
+
+/* WHITE CARDS */
+
+.about-page-bg .value-card {
+    background: rgba(255, 255, 255, 0.93);
+    border: 1px solid rgba(214, 173, 96, 0.3);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.about-page-bg .value-card h3 {
+    color: #111;
+}
+
+.about-page-bg .value-card p {
+    color: #333;
+}
+
+.about-page-bg .value-icon {
+    color: var(--chef-gold);
+}
+
+.about-page-bg .value-gold-line {
+    background-color: var(--chef-gold);
+
+}
+/* =========================
+   HIS APPROACH CARDS
+========================= */
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+.value-card {
+    background: rgba(255, 252, 247, 0.95);
+    padding: 32px 30px 34px;
+
+    border: 1px solid rgba(0, 0, 0, 0.06);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10);
+
+    text-align: left;
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.16);
+}
+
+.value-icon {
+    color: var(--chef-gold);
+    font-size: 34px;
+    line-height: 1;
+    margin-bottom: 14px;
+}
+
+.value-card h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 28px;
+    font-weight: normal;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+}
+
+.value-gold-line {
+    width: 38px;
+    height: 2px;
+    background-color: var(--chef-gold);
+    margin-bottom: 18px;
+}
+
+.value-card p {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.7;
+    margin: 0;
+}
+/* =====================================
+   HOMEPAGE - WARM SPICE STYLE
+===================================== */
+
+.home-hero {
+    position: relative;
+
+    background-image: url("images/dish20.jpg");
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+}
+
+.home-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: rgba(20, 10, 3, 0.58);
+}
+
+.home-hero .hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* GOLD HERO BUTTON */
+
+.gold-btn {
+    background-color: var(--chef-gold);
+    border-color: var(--chef-gold);
+    color: #111;
+}
+
+.gold-btn:hover {
+    background-color: white;
+    border-color: white;
+}
+
+
+/* =====================================
+   ABOUT PREVIEW
+===================================== */
+
+.home-about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 65px;
+
+    align-items: center;
+
+    padding: 100px 8%;
+
+    background-color: #f2e7d5;
+
+    background-image:
+        linear-gradient(
+            rgba(242, 231, 213, 0.88),
+            rgba(242, 231, 213, 0.88)
+        ),
+        url("images/spices.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.home-about-image img {
+    width: 100%;
+    max-height: 620px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+.home-about-text {
+    max-width: 550px;
+}
+
+.home-about-text .gold-label {
+    color: #9a742d;
+    letter-spacing: 4px;
+    font-size: 13px;
+    font-weight: bold;
+
+    margin-bottom: 20px;
+}
+
+.home-about-text h2 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 48px;
+    font-weight: normal;
+
+    line-height: 1.15;
+
+    margin-bottom: 25px;
+
+    color: #19130d;
+}
+
+.home-about-text p {
+    color: #3f372f;
+
+    line-height: 1.9;
+
+    margin-bottom: 30px;
+
+    font-size: 17px;
+}
+
+.warm-button {
+    display: inline-block;
+
+    background-color: var(--chef-gold);
+
+    color: #111;
+
+    padding: 15px 28px;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    transition: 0.3s;
+}
+
+.warm-button:hover {
+    background-color: #111;
+    color: white;
+}
+
+
+/* =====================================
+   SIGNATURE DISHES
+===================================== */
+
+.signature-section {
+    padding: 100px 8%;
+
+    background-color: #f8f1e6;
+}
+
+.signature-section .section-heading {
+    text-align: center;
+
+    margin-bottom: 50px;
+}
+
+.signature-section .section-heading .gold-label {
+    color: #9a742d;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 15px;
+}
+
+.signature-section .section-heading h2 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 42px;
+    font-weight: normal;
+
+    color: #1b1712;
+}
+
+.signature-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 28px;
+}
+
+.signature-card {
+    background-color: rgba(255, 255, 255, 0.78);
+
+    border: 1px solid rgba(214, 173, 96, 0.22);
+
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+
+    overflow: hidden;
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.signature-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.13);
+}
+
+.signature-card img {
+    width: 100%;
+    height: 280px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+.signature-card-content {
+    padding: 25px;
+}
+
+.signature-card h3 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 24px;
+    font-weight: normal;
+
+    margin-bottom: 12px;
+
+    color: #1c1712;
+}
+
+.signature-card p {
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    color: #4b433a;
+}
+
+.signature-link {
+    text-align: center;
+
+    margin-top: 45px;
+}
+
+.signature-link a {
+    color: #8f6926;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    font-size: 13px;
+
+    letter-spacing: 3px;
+}
+
+.signature-link a:hover {
+    color: #111;
+}
+
+
+/* =====================================
+   QUOTE SECTION
+===================================== */
+
+.home-quote {
+    position: relative;
+
+    min-height: 380px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background-image: url("images/spices.jpg");
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+}
+
+.home-quote-overlay {
+    position: absolute;
+    inset: 0;
+
+    background: rgba(25, 12, 3, 0.72);
+}
+
+.home-quote-content {
+    position: relative;
+    z-index: 2;
+
+    max-width: 850px;
+
+    padding: 70px 30px;
+}
+
+.quote-mark {
+    color: var(--chef-gold);
+
+    font-family: Georgia, serif;
+
+    font-size: 70px;
+
+    line-height: 0.7;
+
+    margin-bottom: 25px;
+}
+
+.home-quote blockquote {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 32px;
+
+    line-height: 1.5;
+
+    font-weight: normal;
+
+    margin-bottom: 25px;
+}
+
+.home-quote-content p {
+    color: var(--chef-gold);
+
+    font-size: 13px;
+
+    letter-spacing: 2px;
+}
+
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media (max-width: 900px) {
+
+    .home-about {
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+    }
+
+    .signature-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .home-about-text h2 {
+        font-size: 38px;
+    }
+
+    .home-quote blockquote {
+        font-size: 25px;
+    }
+}
