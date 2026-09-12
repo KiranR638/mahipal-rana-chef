@@ -1585,3 +1585,14 @@ body {
         font-size: 25px;
     }
 }
+/* About page biography heading */
+.about-page-text h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-style: italic;
+    font-size: 25px;
+    font-weight: normal;
+    line-height: 1.35;
+    margin-top: 28px;
+    margin-bottom: 22px;
+    color: #1a1a1a;
+}
